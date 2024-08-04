@@ -12,14 +12,14 @@ global.allowJids = process.env.ALLOW_JID || "null";
 global.blockJids = process.env.BLOCK_JID || "null";
 global.DATABASE_URL = process.env.DATABASE_URL || "";
 global.timezone = process.env.TZ || process.env.TIME_ZONE || "Africa/Lagos";
-global.github = process.env.GITHUB || "https://github.com/WHIZBOT1/WHIZBOTMD";
+global.github = process.env.GITHUB || "https://github.com/theMalik-g/WHIZBOTMD";
 global.gurl = process.env.GURL || "https://chat.whatsapp.com/KrJhpZhgKxZLfHcyUZKOMw";
 global.website = process.env.GURL || "https://chat.whatsapp.com/KrJhpZhgKxZLfHcyUZKOMw";
 global.THUMB_IMAGE = process.env.THUMB_IMAGE || process.env.IMAGE || "https://telegra.ph/file/9b8261a6abfb3c8e2ea38.jpg";
 global.devs = "923263429027";
 global.sudo = process.env.SUDO || "923263429027";
 global.owner = process.env.OWNER_NUMBER || "923263429027";
-global.style = process.env.STYLE || "3";
+global.style = process.env.STYLE || "1";
 global.gdbye = process.env.GOODBYE || "true";
 global.wlcm = process.env.WELCOME || "true";
 global.warncount = process.env.WARN_COUNT || 2;
@@ -66,7 +66,7 @@ module.exports = {
   LANG: (process.env.THEME || "JAY").toUpperCase(),
 };
 global.rank = "updated";
-global.isMongodb = false;
+global.isMongodb = true;
 let file = require.resolve(__filename);
 fs.watchFile(file, () => {
   fs.unwatchFile(file);
